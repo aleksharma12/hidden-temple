@@ -1,3 +1,3 @@
-def press_any_key_to_continue():
-    print "(Press any key to continue)"
+def press_enter_to_continue():
+    print "(Press ENTER to continue)"
     raw_input()

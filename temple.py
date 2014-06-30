@@ -18,4 +18,4 @@ print "the lives of several other explorers before you.\n"
 
 print "How hard could it be?\n"
 
-interface.press_any_key_to_continue()
+interface.press_enter_to_continue()
