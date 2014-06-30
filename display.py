@@ -1,4 +1,5 @@
-def text(game_name):
-    filename = game_name + '.txt'
-    text = open(filename)
+import format
+
+def text(name):
+    text = open(format.to_txt(name))
     print text.read()
