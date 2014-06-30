@@ -1,4 +1,6 @@
-print "The Hidden Temple\n"
+import interface
+
+print "\nThe Hidden Temple\n"
 
 print "You are a daring British explorer, bored with your stupid life"
 print "and eager to bring glory to the empire.\n"
@@ -13,4 +15,6 @@ print "natives, and dumb terrain issues, you have made it to the temple."
 print "All that remains are a series of deadly traps that have been"
 print "the death of several explorers before you.\n"
 
-print "How hard could it be?"
+print "How hard could it be?\n"
+
+interface.press_any_key_to_continue()
