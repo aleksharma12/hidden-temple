@@ -1,5 +1,5 @@
 import interface
 import display
 
-display.introduction()
+display.intro()
 interface.press_enter_to_continue()
