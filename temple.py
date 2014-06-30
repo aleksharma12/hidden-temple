@@ -1,6 +1,7 @@
 import interface
 
-print "\nThe Hidden Temple\n"
+print "\nThe Hidden Temple"
+print "_________________\n"
 
 print "You are a daring British explorer, bored with your stupid life"
 print "and eager to bring glory to the empire.\n"
