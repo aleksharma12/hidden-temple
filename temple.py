@@ -1,5 +1,5 @@
 import interface
 import display
 
-display.intro('temple')
+display.text('temple')
 interface.press_enter_to_continue()

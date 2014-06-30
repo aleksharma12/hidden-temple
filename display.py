@@ -1,4 +1,4 @@
-def intro(game_name):
+def text(game_name):
     filename = game_name + '.txt'
-    intro = open(filename)
-    print intro.read()
+    text = open(filename)
+    print text.read()
