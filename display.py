@@ -1,5 +1,3 @@
-import format
-
-def text(name):
-    text = open(format.to_txt(name))
+def print_text(filename):
+    text = open(filename)
     print text.read()

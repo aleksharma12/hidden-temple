@@ -1,5 +1,5 @@
 import interface
 import display
 
-display.text('intro')
+display.print_text('intro.txt')
 interface.press_enter_to_continue()
