@@ -1,4 +1,6 @@
 import display
+import format
 
 def load_level(level):
-  display.print_text(level + '.txt')
+    level_intro = format.to_txt(level)
+    display.print_text(level_intro)
