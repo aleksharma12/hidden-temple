@@ -1,2 +1,4 @@
+import display
+
 def load_level(level):
-    pass
+  display.print_text(level + '.txt')
