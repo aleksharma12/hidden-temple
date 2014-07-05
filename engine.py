@@ -3,8 +3,8 @@ import format
 from levels import *
 
 level_dict = {
-    'foreword': Foreword(),
-    'gates': Gates()
+    'foreword': Foreword('foreword'),
+    'gates': Gates('foreword')
     }
 
 def load_level(level):
