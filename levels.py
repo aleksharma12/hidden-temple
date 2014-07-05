@@ -1,10 +1,5 @@
-class Level(object):
-
-    def __init__(self, name):
-        self.name = name
-
-class Foreword(Level):
+class Foreword(object):
     pass
 
-class Gates(Level):
+class Gates(object):
     pass
