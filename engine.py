@@ -12,4 +12,4 @@ def load_level(level):
     level_intro = format.to_txt(level)
     display.print_text(level_intro)
 
-    level_dict[level]
+    return level_dict[level]

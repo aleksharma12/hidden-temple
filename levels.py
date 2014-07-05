@@ -1,5 +1,9 @@
 class Foreword(object):
-    pass
+
+    def __init__(self):
+        self.name = 'foreword'
 
 class Gates(object):
-    pass
+
+    def __init__(self):
+        self.name = 'gates'
