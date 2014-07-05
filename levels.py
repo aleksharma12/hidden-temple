@@ -1,5 +1,8 @@
-class Foreword(object):
+class Level(object):
     pass
 
-class Gates(object):
+class Foreword(Level):
+    pass
+
+class Gates(Level):
     pass
