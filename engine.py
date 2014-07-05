@@ -1,6 +1,5 @@
-import display
-import format
 from levels import *
+import display
 
 level_dict = {
     'foreword': Foreword(),
@@ -8,8 +7,5 @@ level_dict = {
     }
 
 def load_level(level):
-    #TODO: move intro text printing into level
-    level_intro = format.to_txt(level)
-    display.print_text(level_intro)
-
+    display.print_level_intro(level)
     return level_dict[level]
