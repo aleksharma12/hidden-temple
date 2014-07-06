@@ -22,4 +22,4 @@ def _load_game_intro():
 
 def _load_level(level):
     display.print_level_intro(level)
-    return level_dict[level]
+    level_dict[level]
