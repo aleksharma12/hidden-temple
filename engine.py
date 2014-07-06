@@ -6,7 +6,6 @@ level_dict = {
     'gates': Gates()
     }
 
-#PUBLIC
 def run():
     #print introduction
     _load_game_intro()
@@ -16,11 +15,10 @@ def run():
     _load_level('gates')
     #exit the game
 
-#PRIVATE
-def _load_level(level):
-    display.print_level_intro(level)
-    return level_dict[level]
-
 def _load_game_intro():
     display.print_text('text/foreword.txt')
     interface.press_enter_to_continue
+
+def _load_level(level):
+    display.print_level_intro(level)
+    return level_dict[level]
