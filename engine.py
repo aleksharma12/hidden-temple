@@ -3,17 +3,24 @@ import display
 import interface
 
 level_dict = {
-    'foreword': Foreword(),
     'gates': Gates()
     }
 
 #PUBLIC
 def run():
-  _load_level('foreword')
-  interface.press_enter_to_continue()
-  _load_level('gates')
+    #print introduction
+    _load_game_intro()
+    interface.press_enter_to_continue()
+    #while game is not complete
+        #load next level
+    _load_level('gates')
+    #exit the game
 
 #PRIVATE
 def _load_level(level):
     display.print_level_intro(level)
     return level_dict[level]
+
+def _load_game_intro():
+    display.print_text('text/foreword.txt')
+    interface.press_enter_to_continue
