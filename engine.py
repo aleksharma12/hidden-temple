@@ -1,4 +1,5 @@
 from levels import *
+from sys import exit
 import display
 import interface
 
@@ -13,6 +14,7 @@ def run():
         #load next level
     _load_level('gates')
     #exit the game
+    exit(0)
 
 def _load_game_intro():
     display.print_text('text/foreword.txt')
