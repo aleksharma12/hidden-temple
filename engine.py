@@ -8,12 +8,8 @@ level_dict = {
     }
 
 def run():
-    #print introduction
     _load_game_intro()
-    #while game is not complete
-        #load next level
     _load_level('gates')
-    #exit the game
     exit(0)
 
 def _load_game_intro():
