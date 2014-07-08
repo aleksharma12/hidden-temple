@@ -1,8 +1,14 @@
 import format
 
-def print_graphic(graphic_array):
-    for line in graphic_array:
-        print '\t\t\t' + line
+def print_gates(gate_positions):
+    #extract these tabs into a new centering method
+    print '\t\t\t' + "[IIIIIIIIIIIII]"
+    for i, val in enumerate(gate_positions):
+        if val == 0:
+            print '\t\t\t' + str(i+1) + ' [+++++++++] ' + str(i+1)
+        else:
+            print '\t\t\t' + str(i+1) + ' [         ] ' + str(i+1)
+    print '\t\t\t' + "[IIIIIIIIIIIII]"
 
 def print_level_intro(level_name):
     level_intro = format.to_txt(level_name)
