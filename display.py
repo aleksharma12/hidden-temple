@@ -8,13 +8,15 @@ def print_text(file_name):
     text = open(file_name)
     print text.read()
 
+def print_and_center(string):
+    print '\t\t\t' + string
+
 #GATES LEVEL
 def print_gates(gate_positions):
-    #extract these tabs into a new centering method
-    print '\t\t\t' + "[IIIIIIIIIIIII]"
+    print_and_center("[IIIIIIIIIIIII]")
     for i, val in enumerate(gate_positions):
         if val == 0:
-            print '\t\t\t' + str(i+1) + ' [+++++++++] ' + str(i+1)
+            print_and_center(str(i+1) + ' [+++++++++] ' + str(i+1))
         else:
-            print '\t\t\t' + str(i+1) + ' [         ] ' + str(i+1)
-    print '\t\t\t' + "[IIIIIIIIIIIII]"
+            print_and_center(str(i+1) + ' [         ] ' + str(i+1))
+    print_and_center("[IIIIIIIIIIIII]\n")
