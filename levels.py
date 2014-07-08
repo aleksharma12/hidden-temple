@@ -14,7 +14,15 @@ class Gates(object):
             #display gates graphic
 
     def _gates_graphic(self):
-        graphic = ["[IIIIIIIIIIIII]"]
+        graphic = [
+        "[IIIIIIIIIIIII]",
+        "1 [+++++++++] 1",
+        "2 [+++++++++] 2",
+        "3 [+++++++++] 3",
+        "4 [+++++++++] 4",
+        "5 [+++++++++] 5",
+        "[IIIIIIIIIIIII]"
+        ]
         # for gate in gates:
         #     if gate == 0:
         return graphic
