@@ -2,7 +2,7 @@ import format
 
 def print_graphic(graphic_array):
     for line in graphic_array:
-        print line
+        print '\t\t\t' + line
 
 def print_level_intro(level_name):
     level_intro = format.to_txt(level_name)
