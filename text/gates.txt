@@ -6,6 +6,9 @@ You stand before a series of 5 imposing stone gates. Some seem
 to be open, while others are currently shut tight. Maybe those
 5 levers at the front of the first gate are connected...
 
+Your excitement quickly turns to horror as you realize that you are
+going to have to solve a puzzle to get through these gates. Sigh.
+
 As a result of the high amount of time/space distortion
 surrounding the temple, you gain an odd visual perspective
 on the situation, allowing you to see the layout of the gates
@@ -15,6 +18,3 @@ How magnificent! You have read about these out-of-body experiences,
 but have never had the good fortune to actually have one. Just wait
 until the other explorers hear that you reached the temple, only
 to be too drugged out to do anything! Awesome!
-
-Your excitement quickly turns to horror as you realize that you are
-going to have to solve a puzzle to get through these gates. Sigh.
