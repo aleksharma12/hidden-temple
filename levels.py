@@ -8,8 +8,8 @@ class Gates(object):
         self.gates = [0,0,0,0,0]
 
     def play(self):
+        display.print_gates(self.gates)
         while sum(self.gates) < 5:
-            display.print_gates(self.gates)
             print 'Select a lever'
             lever = interface.int_input()
             #open/close gates depending on lever
