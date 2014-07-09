@@ -9,13 +9,14 @@ class Gates(object):
         self.moves = 0
 
     def play(self):
-        display.print_gates(self)
+        display.print_gates(self.positions)
         while sum(self.positions) < 5:
             print 'Select a lever'
             lever = interface.int_input()
             self._switch(lever)
             self.moves += 1
-            display.print_gates(self)
+            display.print_gates(self.positions)
+        display.print_gates_victory(self.moves)
 
     def _switch(self, lever):
         if lever == 1:
