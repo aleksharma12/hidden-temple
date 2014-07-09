@@ -11,8 +11,8 @@ class Gates(object):
     def play(self):
         display.print_gates(self.positions)
         while sum(self.positions) < 5:
-            print 'Select a lever'
-            lever = interface.int_input()
+            print 'Select a number to choose a lever'
+            lever = interface.int_input_in_range(1, 6)
             self._switch(lever)
             self.moves += 1
             display.print_gates(self.positions)
@@ -36,5 +36,4 @@ class Gates(object):
             print "Oh no! It looks like this lever has been jammed!"
             print "Too bad, since it's connected to ALL the gates...\n"
         else:
-            print "That number doesn't match a lever!\n"
             self.moves -= 1
