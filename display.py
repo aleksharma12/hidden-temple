@@ -15,7 +15,7 @@ def print_and_center(string):
 def print_gates(gate_positions):
     print_and_center("[IIIIIIIIIIIII]")
     for i, val in enumerate(gate_positions):
-        if val == 0:
+        if val == -1:
             print_and_center(str(i+1) + ' [+++++++++] ' + str(i+1))
         else:
             print_and_center(str(i+1) + ' [         ] ' + str(i+1))
