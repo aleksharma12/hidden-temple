@@ -16,4 +16,15 @@ class Gates(object):
             display.print_gates(self.gates)
 
     def _switch(self, lever):
-        pass
+        if lever == 1:
+            self.gates[0] *= -1
+        elif lever == 2:
+            self.gates[1] *= -1
+        elif lever == 3:
+            self.gates[2] *= -1
+        elif lever == 4:
+            self.gates[3] *= -1
+        elif lever == 5:
+            self.gates[4] *= -1
+        else:
+            print "That number doesn't match a lever!\n"
