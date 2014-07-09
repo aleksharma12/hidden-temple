@@ -22,7 +22,7 @@ def print_gates(gate_positions):
     print_and_center("[IIIIIIIIIIIII]\n")
 
 def print_moves(gate_moves):
-    print_and_center("Moves taken: " + str(gate_moves))
+    print_and_center("Moves taken: " + str(gate_moves) + "\n")
 
 def print_gates_victory(num_moves):
     if num_moves < 10:
