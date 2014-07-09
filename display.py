@@ -14,13 +14,15 @@ def print_and_center(string):
 #GATES LEVEL
 def print_gates(gate_positions):
     print_and_center("[IIIIIIIIIIIII]")
-    for i, val in enumerate(gate.positions):
+    for i, val in enumerate(gate_positions):
         if val == -1:
             print_and_center(str(i+1) + ' [+++++++++] ' + str(i+1))
         else:
             print_and_center(str(i+1) + ' [         ] ' + str(i+1))
     print_and_center("[IIIIIIIIIIIII]\n")
-    print_and_center("Moves taken: " + str(gate.moves))
+
+def print_moves(gate_moves):
+    print_and_center("Moves taken: " + str(gate_moves))
 
 def print_gates_victory(num_moves):
     if num_moves < 10:

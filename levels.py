@@ -16,6 +16,7 @@ class Gates(object):
             self._switch(lever)
             self.moves += 1
             display.print_gates(self.positions)
+            display.print_moves(self.moves)
         display.print_gates_victory(self.moves)
 
     def _switch(self, lever):
