@@ -20,18 +20,19 @@ class Gates(object):
     def _switch(self, lever):
         if lever == 1:
             self.positions[0] *= -1
-            self.positions[3] *= -1
+            self.positions[4] *= -1
         elif lever == 2:
             self.positions[4] *= -1
         elif lever == 3:
             self.positions[1] *= -1
             self.positions[2] *= -1
-            self.positions[3] *= -1
+            self.positions[4] *= -1
         elif lever == 4:
             self.positions[0] *= -1
-            self.positions[4] *= -1
+            self.positions[3] *= -1
         elif lever == 5:
             print "Oh no! It looks like this lever has been jammed!"
             print "Too bad, since it's connected to ALL the gates...\n"
         else:
             print "That number doesn't match a lever!\n"
+            self.moves -= 1
