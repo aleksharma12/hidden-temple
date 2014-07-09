@@ -14,8 +14,8 @@ class Gates(object):
             print 'Select a lever'
             lever = interface.int_input()
             self._switch(lever)
-            display.print_gates(self)
             self.moves += 1
+            display.print_gates(self)
 
     def _switch(self, lever):
         if lever == 1:

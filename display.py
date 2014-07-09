@@ -20,3 +20,4 @@ def print_gates(gate):
         else:
             print_and_center(str(i+1) + ' [         ] ' + str(i+1))
     print_and_center("[IIIIIIIIIIIII]\n")
+    print_and_center("Moves taken: " + str(gate.moves))
