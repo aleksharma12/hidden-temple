@@ -12,7 +12,7 @@ class Gates(object):
         display.print_gates(self.positions)
         while sum(self.positions) < 5:
             print 'Select a number to choose a lever'
-            lever = interface.int_input_in_range(1, 6)
+            lever = interface.filter_lever()
             self._switch(lever)
             self.moves += 1
             display.print_gates(self.positions)
