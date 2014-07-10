@@ -15,3 +15,7 @@ reduce your student loans, and return home in time for buttery scones!
 First, [clone this repository](http://git-scm.com/book/en/Git-Basics-Getting-a-Git-Repository) to a directory of your choice.
 
 Next, start a new game by running `python temple.py`.
+
+#Hints
+
+Write things down. Good explorers always carry [notebooks](http://www.youtube.com/watch?v=_Am-Q2FYuxc)
