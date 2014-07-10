@@ -12,7 +12,7 @@ def print_and_center(string):
     print '\t\t\t' + string
 
 #GATES LEVEL
-def print_gates(gate_positions):
+def print_gates(gate_positions, gate_moves):
     print_and_center("[IIIIIIIIIIIII]")
     for i, val in enumerate(gate_positions):
         if val == -1:
@@ -20,9 +20,7 @@ def print_gates(gate_positions):
         else:
             print_and_center(str(i+1) + ' [         ] ' + str(i+1))
     print_and_center("[IIIIIIIIIIIII]\n")
-
-def print_moves(gate_moves):
-    print_and_center("Moves taken: " + str(gate_moves) + "\n")
+    print_and_center("Moves Taken: " + str(gate_moves) + "\n")
 
 def print_gates_victory(num_moves):
     if num_moves < 10:
