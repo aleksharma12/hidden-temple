@@ -12,8 +12,9 @@ class Gates(object):
         display.print_gates(self.positions)
         while sum(self.positions) < 5:
             lever = interface.select_lever()
-            self._switch(lever)
-            self.moves += 1
+            if lever != 0:
+                self._switch(lever)
+                self.moves += 1
             display.print_gates(self.positions)
             display.print_moves(self.moves)
         display.print_gates_victory(self.moves)
@@ -31,8 +32,6 @@ class Gates(object):
         elif lever == 4:
             self.positions[0] *= -1
             self.positions[3] *= -1
-        elif lever == 5:
+        else:
             print "Oh no! It looks like this lever has been jammed!"
             print "Too bad, since it's connected to ALL the gates...\n"
-        else:
-            self.moves -= 1

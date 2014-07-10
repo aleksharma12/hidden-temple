@@ -12,8 +12,10 @@ def select_lever():
             return i
         else:
             print "That isn't one of the levers!\n"
+            return 0
     except KeyboardInterrupt:
         print "A trap door opens beneath your feet!"
         exit(1)
     except ValueError:
         print "That's not even a number.\n"
+        return 0
