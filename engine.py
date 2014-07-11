@@ -9,6 +9,7 @@ level_dict = {
 
 def run():
     _load_game_intro()
+    _load_level('mirrors')
     _load_level('gates')
     exit(0)
 
