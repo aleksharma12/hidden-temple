@@ -1,3 +1,5 @@
+#TODO: why are all levels in same file?
+#They should be loaded separately as needed
 import display
 import interface
 
