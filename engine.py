@@ -4,7 +4,8 @@ import display
 import interface
 
 level_dict = {
-    'gates': Gates()
+    'gates': Gates(),
+    'mirrors': Mirrors()
     }
 
 def run():

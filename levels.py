@@ -34,3 +34,8 @@ class Gates(object):
         else:
             print "Oh no! It looks like this lever has been jammed!"
             print "Too bad, since it's connected to ALL the gates...\n"
+
+class Mirrors(object):
+
+    def play(self):
+        print "I'm playing it, see?!"
