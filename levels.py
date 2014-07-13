@@ -1,5 +1,5 @@
 import display
-import interface
+import user_input
 
 class Gates(object):
 

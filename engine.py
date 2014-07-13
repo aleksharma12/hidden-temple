@@ -1,7 +1,7 @@
 from levels import *
 from sys import exit
 import display
-import interface
+import user_input
 
 #TODO: this should theoretically be a list of levels you want
 #      program should be smart enough to go get those files
@@ -19,7 +19,7 @@ def run():
 
 def _load_game_intro():
     display.print_text_from('text/foreword.txt')
-    interface.press_enter_to_continue()
+    user_input.press_enter_to_continue()
 
 def _load_level(level):
     cur_level = level
