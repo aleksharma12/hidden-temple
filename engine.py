@@ -3,17 +3,16 @@ from sys import exit
 import display
 import interface
 
-#TODO: each level should be self-contained
-level_dict = {
-    'gates': Gates(),
-    'mirrors': Mirrors()
-    }
+level_list = [
+    Gates(),
+    Mirrors()
+    ]
 
 #TODO: load current level as cur_level
 def run():
     _load_game_intro()
-    _load_level('mirrors')
-    _load_level('gates')
+    for level in level_list:
+        _load_level(level)
     exit(0)
 
 def _load_game_intro():
@@ -23,6 +22,6 @@ def _load_game_intro():
 #TODO: dynamic class instantiation
 #TODO: cur_level.play()
 def _load_level(level):
-    display.print_level_intro(level)
-    new_level = level_dict[level]
-    new_level.play()
+    cur_level = level
+    display.print_level_intro(cur_level.name)
+    cur_level.play()

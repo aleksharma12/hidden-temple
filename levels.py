@@ -9,6 +9,7 @@ class Gates(object):
         #CLOSED = -1, OPEN = 1
         self.positions = [-1,-1,-1,-1,-1]
         self.moves = 0
+        self.name = 'gates'
 
     def play(self):
         display.print_gates(self.positions, self.moves)
@@ -38,6 +39,9 @@ class Gates(object):
             print "Too bad, since it's connected to ALL the gates...\n"
 
 class Mirrors(object):
+
+    def __init__(self):
+        self.name = 'mirrors'
 
     def play(self):
         print "I'm playing it, see?!"
