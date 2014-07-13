@@ -35,6 +35,7 @@ def print_gates_victory(num_moves):
     else:
         print "Sweat pours down your face. A brightly-colored vein"
         print "on your face throbs violently. That puzzle hurt."
+    print "\n"
 
 #MIRRORS
 def print_maze():
