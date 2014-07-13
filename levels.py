@@ -42,4 +42,4 @@ class Mirrors(object):
         self.name = 'mirrors'
 
     def play(self):
-        print "I'm playing it, see?!"
+        display.print_maze()

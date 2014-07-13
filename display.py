@@ -11,7 +11,7 @@ def print_text_from(file_name):
 def print_and_center(string):
     print '\t\t\t' + string
 
-#GATES LEVEL
+#GATES
 def print_gates(gate_positions, gate_moves):
     print_and_center("[IIIIIIIIIIIII]")
     for i, val in enumerate(gate_positions):
@@ -32,3 +32,8 @@ def print_gates_victory(num_moves):
     else:
         print "Sweat pours down your face. A brightly-colored vein"
         print "on your face throbs violently. That puzzle hurt."
+
+#MIRRORS
+def print_maze():
+    for i in xrange(8):
+        print_and_center("[ ][ ][ ][ ][ ][ ][ ]")
