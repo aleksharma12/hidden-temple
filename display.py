@@ -11,8 +11,11 @@ def print_text_from(file_name):
 def print_and_center(string):
     print '\t\t\t' + string
 
+def print_moves(num_moves):
+    print_and_center("Moves Taken: " + str(num_moves) + "\n")
+
 #GATES
-def print_gates(gate_positions, gate_moves):
+def print_gates(gate_positions, num_moves):
     print_and_center("[IIIIIIIIIIIII]")
     for i, val in enumerate(gate_positions):
         if val == -1:
@@ -20,7 +23,7 @@ def print_gates(gate_positions, gate_moves):
         else:
             print_and_center(str(i+1) + ' [         ] ' + str(i+1))
     print_and_center("[IIIIIIIIIIIII]\n")
-    print_and_center("Moves Taken: " + str(gate_moves) + "\n")
+    print_moves(num_moves)
 
 def print_gates_victory(num_moves):
     if num_moves < 10:
