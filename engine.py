@@ -3,12 +3,14 @@ from sys import exit
 import display
 import interface
 
+#TODO: this should theoretically be a list of levels you want
+#      program should be smart enough to go get those files
+#      and import them as needed
 level_list = [
     Gates(),
     Mirrors()
     ]
 
-#TODO: load current level as cur_level
 def run():
     _load_game_intro()
     for level in level_list:
@@ -19,8 +21,6 @@ def _load_game_intro():
     display.print_text_from('text/foreword.txt')
     interface.press_enter_to_continue()
 
-#TODO: dynamic class instantiation
-#TODO: cur_level.play()
 def _load_level(level):
     cur_level = level
     display.print_level_intro(cur_level.name)
