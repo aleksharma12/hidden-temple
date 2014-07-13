@@ -39,6 +39,7 @@ def print_gates_victory(num_moves):
 
 #MIRRORS
 def print_maze(num_moves):
+    print_and_center("   0  1  2  3  4 ")
     for i in xrange(10):
         print_and_center(str(i) + " [ ][ ][ ][ ][ ]")
     print "\n"
