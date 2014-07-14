@@ -5,7 +5,7 @@ def print_game_intro():
 
 def print_level_intro(level_name):
     level_intro = format.to_txt(level_name)
-    print_text_from(level_intro)
+    print_text_from('levels/text/' + level_intro)
 
 def print_text_from(file_name):
     text = open(file_name)
