@@ -1,5 +1,8 @@
 import format
 
+def print_game_intro():
+    print_text_from('foreword.txt')
+
 def print_level_intro(level_name):
     level_intro = format.to_txt(level_name)
     print_text_from(level_intro)

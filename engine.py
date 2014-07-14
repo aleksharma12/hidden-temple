@@ -18,7 +18,7 @@ def run():
     exit(0)
 
 def _load_game_intro():
-    display.print_text_from('text/foreword.txt')
+    display.print_game_intro()
     user_input.press_enter_to_continue()
 
 def _load_level(level):
