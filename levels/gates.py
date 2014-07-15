@@ -7,7 +7,6 @@ class Gates(object):
         #CLOSED = -1, OPEN = 1
         self.positions = [-1,-1,-1,-1,-1]
         self.moves = 0
-        self.name = 'gates'
 
     def play(self):
         display.print_gates(self.positions, self.moves)

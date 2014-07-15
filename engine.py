@@ -24,5 +24,5 @@ def _load_game_intro():
 
 def _load_level(level):
     cur_level = globals()[format.capitalize(level)]()
-    display.print_level_intro(cur_level.name)
+    display.print_level_intro(level)
     cur_level.play()
