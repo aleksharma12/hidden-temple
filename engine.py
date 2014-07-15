@@ -4,9 +4,6 @@ import display
 import format
 import user_input
 
-#TODO: this should theoretically be a list of levels you want
-#      program should be smart enough to go get those files
-#      and import them as needed
 level_list = [
     'gates',
     'mirrors'
