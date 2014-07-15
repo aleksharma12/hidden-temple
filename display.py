@@ -1,20 +1,25 @@
 import format
 
 def print_game_intro():
+    """Finds game foreword and prints it."""
     print_text_from('foreword.txt')
 
 def print_level_intro(level_name):
+    """Prints intro text associated with a level."""
     level_intro = format.to_txt(level_name)
     print_text_from('levels/text/' + level_intro)
 
 def print_text_from(file_name):
+    """Prints a file directly."""
     text = open(file_name)
     print text.read()
 
 def print_and_center(string):
+    """Prints any string and centers it."""
     print '\t\t\t' + string
 
 def print_moves(num_moves):
+    """Prints number of moves taken."""
     print_and_center("Moves Taken: " + str(num_moves) + "\n")
 
 #GATES
