@@ -8,8 +8,8 @@ import user_input
 #      program should be smart enough to go get those files
 #      and import them as needed
 level_list = [
-    'Gates',
-    'Mirrors'
+    'gates',
+    'mirrors'
     ]
 
 def run():
@@ -23,6 +23,6 @@ def _load_game_intro():
     user_input.press_enter_to_continue()
 
 def _load_level(level):
-    cur_level = globals()[level]()
+    cur_level = globals()[format.capitalize(level)]()
     display.print_level_intro(cur_level.name)
     cur_level.play()
