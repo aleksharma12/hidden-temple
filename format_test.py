@@ -7,5 +7,9 @@ class TestFormatFunctions(unittest.TestCase):
         text = format.to_txt('zorro')
         self.assertEqual(text, 'zorro.txt')
 
+    def test_capitalize(self):
+        capitalized = format.capitalize('zorro')
+        self.assertEqual(capitalized, 'Zorro')
+
 if __name__ == '__main__':
     unittest.main()

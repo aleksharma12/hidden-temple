@@ -3,4 +3,5 @@ def to_txt(file_name):
     return file_name + '.txt'
 
 def capitalize(string):
+    """Capitalizes a string"""
     return string[:1].upper() + string[1:]
