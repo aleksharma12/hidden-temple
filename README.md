@@ -18,4 +18,4 @@ Next, start a new game by running `python temple.py`.
 
 #Hints
 
-Write things down. Good explorers always carry [notebooks](http://www.youtube.com/watch?v=_Am-Q2FYuxc)
+Write things down. Good explorers always carry notebooks.
